@@ -1,0 +1,15 @@
+name: MinecraftPluginProgrammeringB
+version: '${version}'
+
+main: MinecraftPlugin.minecraftPluginProgrammeringB.MinecraftPluginProgrammeringB
+api-version: '1.21'
+load: POSTWORLD
+commands:
+  customenchants:
+    description: Lists and applies custom enchants.
+    usage: /customenchants <list|give>
+    aliases: [ce, cenchants]
+permissions:
+  customenchants.admin:
+    description: Allows applying custom enchants to held items.
+    default: op
